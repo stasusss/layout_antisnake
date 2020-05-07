@@ -1,4 +1,30 @@
 body {
   margin: 0; }
 
+.snake {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); }
+  .snake__block {
+    color: #fff;
+    font-family: Arial, sans-serif;
+    font-size: 100px;
+    text-align: center;
+    line-height: 300px; }
+  .snake__block:nth-child(1) {
+    background-color: red; }
+  .snake__block:nth-child(2) {
+    background-color: #cc0000; }
+  .snake__block:nth-child(3) {
+    background-color: #990000; }
+  .snake__block:nth-child(4) {
+    background-color: #660000; }
+  .snake__block:nth-child(5) {
+    background-color: #330000; }
+  .snake__block:nth-child(6) {
+    background-color: black; }
+
+@media screen and (min-width: 900px) {
+  .snake {
+    grid-template-columns: repeat(3, 1fr); } }
+
 /*# sourceMappingURL=main.css.map */
